@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Videoclub", "Videoclub\Videoclub.ssmssqlproj", "{91E81E44-933D-4BFF-8B85-FB35C040C211}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CA64498-9205-4192-AC41-E53032C72D8F}.Default|Default.ActiveCfg = Default
+		{91E81E44-933D-4BFF-8B85-FB35C040C211}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BB3561A-0265-4C07-B71C-90F3C3CA6F6C}
+	EndGlobalSection
+EndGlobal
