@@ -1,4 +1,4 @@
--- MODIFICACION ALBA
+-- MODIFICACION 1 alba
 --seleccion de todos los atributos de la tabla clientes
 SELECT * FROM Cliente 
 SELECT * FROM Cliente WHERE dni = '123145'
