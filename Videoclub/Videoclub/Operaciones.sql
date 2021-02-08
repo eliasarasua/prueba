@@ -1,3 +1,4 @@
+-- MODIFICACION ALBA
 --seleccion de todos los atributos de la tabla clientes
 SELECT * FROM Cliente 
 SELECT * FROM Cliente WHERE dni = '123145'
@@ -27,11 +28,11 @@ ON P.idPelicula = A.idPelicula
 --modificar el telefono de un cliente concreto (por su nombre y apellido)
 UPDATE cliente SET telefono = '674559566' WHERE nombre = 'Lucas' and apellido = 'Roiz'
 
---añadir una nueva reserva a alquiler
+--aÃ±adir una nueva reserva a alquiler
 INSERT INTO Alquiler (idCliente,idPelicula,fechaInicio,fechaFin,precio)
 	VALUES (1,3, '20191201 23:12', '20191206 23:12',3.75 )
 
---Añadir el nombre de los clientes en alquiler
+--AÃ±adir el nombre de los clientes en alquiler
 UPDATE Alquiler SET Alquiler.nombreCliente = nombre FROM Cliente WHERE Alquiler.idCliente = Cliente.idCliente
 
 --contar cuantos clientes te han alquilado pelis
@@ -40,7 +41,7 @@ SELECT COUNT(DISTINCT dni) AS numClientes FROM Cliente, Alquiler WHERE Alquiler.
 --quienes son los clientes que han alquilado y cuantas veces
 SELECT cliente.nombre AS Nombre, COUNT(alquiler.nombreCliente) AS numAlquileres FROM Cliente, Alquiler WHERE Alquiler.idCliente = Cliente.idCliente GROUP BY Cliente.nombre
 
---QUÉ clientes te han alquilado pelis en octubre 
+--QUÃ‰ clientes te han alquilado pelis en octubre 
 SELECT nombrecliente FROM Cliente, Alquiler WHERE Alquiler.idCliente = Cliente.idCliente 
 	AND fechaInicio > '20191001' AND fechaFin < '20191031'
 	GROUP BY nombreCliente 
@@ -69,7 +70,7 @@ SELECT Pelicula.nombre AS Pelicula, Alquiler.nombreCliente AS Cliente, DATEDIFF(
 	FROM Alquiler, Cliente, Pelicula 
 	WHERE Cliente.idCliente = Alquiler.idCliente and Alquiler.idPelicula = Pelicula.idPelicula
 	
---Ahora vamos a añadir ese valor a la tabla alquiler
+--Ahora vamos a aÃ±adir ese valor a la tabla alquiler
 ALTER TABLE Alquiler ADD diasAlquiler int NULL
 ALTER TABLE Alquiler ADD penalizacion tinyint NULL
 
