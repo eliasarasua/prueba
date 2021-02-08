@@ -1,4 +1,5 @@
 -- MODIFICACION 1 alba
+--MODIFICACION ELIA EN MI PROPIO REPOSITORIO
 --seleccion de todos los atributos de la tabla clientes
 SELECT * FROM Cliente 
 SELECT * FROM Cliente WHERE dni = '123145'
